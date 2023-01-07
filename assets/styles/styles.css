@@ -68,3 +68,60 @@ body{
     color: white;
     font-size: large;
 }
+.lisform{
+    color:white;
+    font-weight: 900;
+    background-color: #00032C;
+    padding: 5% 15%;
+}
+.lisform button{
+    position: relative;
+    float: right;
+    margin-left:2rem ;
+}
+.displayable{
+    display: none;
+    position: relative;
+    float: right;
+    margin-top:1.2rem ;
+
+}
+
+@media screen and (max-width:767px){
+    .right-sec{
+        display: none;
+    }
+    .displayable{
+        display: flex;
+    }
+    .menutoggle{
+        list-style-type: none;
+        font-size: large;
+    }
+    .menutoggle li{
+        padding: .5rem;
+        color: white;
+        font-size: large;
+    }
+    .footer{
+        background-color: black;
+        height: 10rem;
+        padding: .5rem 5rem 
+    }
+    .footer-right{
+        color: white;
+        height: 100%;
+        list-style-type: none;
+        position: relative;
+        float: left;
+        margin-top: 1.5rem;
+    }
+    .footer-right li{
+        display: flex;
+        padding: .1rem;
+        color: white;
+        font-size: small;
+
+    }
+
+}
