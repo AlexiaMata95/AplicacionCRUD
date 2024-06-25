@@ -33,7 +33,6 @@ function validarForm(e){
         objlogros.logro=logroinput.value;
         objlogros.años=añoinput.value;
         objlogros.id=Date.now();
-        
         agregarregistro();
     }
 }
@@ -62,7 +61,7 @@ logros.forEach(achieve => {
     registro.dataset.id=id;
 
     const editbtn=document.createElement('button');
-    editbtn.onclick=()=>cargarlogro(logro);
+    editbtn.onclick=()=>cargarlogro(achieve);
     editbtn.textContent='Editar';
     editbtn.classList.add('btn', 'btn-warning');
     registro.append(editbtn);
@@ -107,7 +106,7 @@ function cargarlogro(logro){
     logros = logros.filter(logro => logro.id !== id);
 
     limpiarHTML();
-    mostrarEmpleados();
+    mostrarlogros();
 }
 function limpiarHTML(){
     const divRegistros=document.querySelector('.listform')

@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background: linear-gradient(to bottom,#00032C, #550EC3, #C102A0);
 }
 .navigation-bar{
     background-color: #00032C;
@@ -25,7 +26,7 @@ body{
     display: inline;
 }
 .jumbotron{
-    background: linear-gradient(to bottom,#00032C, #550EC3);
+    
     color: white;
     justify-items: center;
     padding: 5%;
@@ -43,7 +44,6 @@ body{
     font-size: 1.5rem;
 }
 .formulario{
-    background: linear-gradient(to bottom,#550EC3, #C102A0);
     padding: 5% 15%;
     justify-items: center;
     color: white;
@@ -85,6 +85,12 @@ body{
     float: right;
     margin-top:1.2rem ;
 
+}
+.alert-danger{
+    display: none;
+    margin: 0 calc(50%/2); 
+    width: 50%; 
+    justify-content: center;
 }
 
 @media screen and (max-width:767px){
